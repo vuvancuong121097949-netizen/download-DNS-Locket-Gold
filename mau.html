@@ -1,0 +1,430 @@
+﻿<html lang="vi"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ONLINE STORE SHOP - Cài Đặt Cấu Hình Locket Gold</title>
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✨&lt;/text&gt;&lt;/svg&gt;">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #090d16 70%);
+      color: #f1f5f9;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 24px 16px;
+      line-height: 1.5;
+    }
+    .container {
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    .card {
+      background: linear-gradient(145deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.95));
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 28px;
+      padding: 32px 24px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #f59e0b, #fbbf24, #f59e0b);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    .brand-tag {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #fbbf24;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 6px;
+    }
+    .title {
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff 40%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border: 1px solid rgba(52, 211, 153, 0.25);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #34d399;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #34d399;
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .btn {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #ffffff;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 18px;
+      text-decoration: none;
+      margin: 22px 0;
+      box-shadow: 0 10px 25px -4px rgba(245, 158, 11, 0.45);
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 12px -2px rgba(245, 158, 11, 0.3);
+    }
+    .btn-icon {
+      font-size: 18px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #94a3b8;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: rgba(15, 23, 42, 0.65);
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 13.5px;
+      color: #cbd5e1;
+    }
+    .step-num {
+      background: linear-gradient(135deg, #38bdf8, #0284c7);
+      color: #ffffff;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .step-text {
+      line-height: 1.5;
+    }
+    .step-text b {
+      color: #f8fafc;
+    }
+    .warning-box {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-top: 18px;
+      font-size: 12.5px;
+      color: #fcd34d;
+      line-height: 1.6;
+    }
+    .warning-title {
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #fbbf24;
+      font-size: 13px;
+    }
+    .warning-list {
+      padding-left: 18px;
+      margin: 0;
+    }
+    .warning-list li {
+      margin-bottom: 4px;
+    }
+    .warning-list li:last-child {
+      margin-bottom: 0;
+    }
+    .safari-notice {
+      display: none;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      font-size: 12px;
+      color: #93c5fd;
+      line-height: 1.5;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 11px;
+      color: #64748b;
+    }
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-size: 11px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.2s;
+    }
+    .copy-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    .video-container {
+      background: rgba(15, 23, 42, 0.7);
+      border-radius: 20px;
+      padding: 16px;
+      margin-bottom: 22px;
+      border: 1px solid rgba(251, 191, 36, 0.25);
+      box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.6);
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #020617;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    .video-el {
+      width: 100%;
+      max-height: 480px;
+      display: block;
+      outline: none;
+      background: #000;
+      border-radius: 14px;
+    }
+    .video-iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: block;
+      border: 0;
+      border-radius: 14px;
+    }
+  </style>
+<script src="/_rum/beacon.js" data-osh-rum="" data-z="6abb403749358c6ef0d9fe92" async=""></script><script src="/_osh-cs/widget.js" data-osh-cs="" data-osh-token="6ad1ad00:MDFNNTFHUUpDNTIwRFQ3OFo5Ukg5NzhUVlQ:bbb1bed3705b9450:fd9f665b113500d11ccccaf8fae889cf1f72f9777344cf2bdfbedf7a12849df0" async=""></script><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="9c5f9369-3c4e-4fe4-96a0-b7d05d27a7ad" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"></script><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="9c5f9369-3c4e-4fe4-96a0-b7d05d27a7ad" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/101.js"></script></head>
+<body __processed_01d8a24b-3cca-4e0a-b5a7-39e886053346__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJUSUtUT0siOiJlbmFibGVkIiwiTElOS0VESU4iOiJlbmFibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMy4wIiwic2NvcmUiOjIwMzAwMH1d">
+  <div class="container" bis_skin_checked="1">
+    <div class="card" bis_skin_checked="1">
+      
+      <!-- In-app browser detection notice -->
+      <div id="safariNotice" class="safari-notice" bis_skin_checked="1" style="display: block;">
+        <i class="fa-solid fa-compass mr-1 text-sky-400"></i>
+        <b>Mẹo:</b> Để cài đặt cấu hình, hãy mở trang web này bằng trình duyệt <b>Safari</b> trên iPhone.
+      </div>
+
+      <div class="header" bis_skin_checked="1">
+        <div class="brand-tag" bis_skin_checked="1">
+          <i class="fa-solid fa-sparkles"></i> taikhoanxin.site
+        </div>
+	<div class="brand-tag" bis_skin_checked="1">
+          <i class="fa-solid fa-sparkles"></i> ONLINE STORE SHOP
+        </div>
+        <h1 class="title">✨ LOCKET GOLD</h1>
+        <div class="badge" bis_skin_checked="1">
+          <span class="badge-dot"></span>
+          <span>Máy chủ DNS đang hoạt động</span>
+        </div>
+      </div>
+      
+      <!-- Nút tải file cấu hình -->
+      <a href="https://ctv.nodns.vn/cai-dns" class="btn" id="downloadBtn">
+        <span class="btn-icon"><i class="fa-solid fa-cloud-arrow-down"></i></span>
+        <span>Tải Cấu Hình Locket Gold</span>
+      </a>
+
+      <!-- Khung Video Hướng Dẫn Cài Đặt Chi Tiết -->
+      <div id="videoContainer" class="video-container" style="display: block;" bis_skin_checked="1">
+        <div class="section-title" bis_skin_checked="1">
+          <i class="fa-solid fa-circle-play text-amber-400"></i>
+          <span id="videoTitleDisplay">Video hướng dẫn cài đặt DNS Locket Gold trên iPhone</span>
+        </div>
+        <div class="video-wrapper" bis_skin_checked="1">
+          <video id="dnsVideoPlayer" controls="" playsinline="" preload="metadata" class="video-el" style="display: block;">
+            <source id="videoSource" src="IMG_7537.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ phát video HTML5.
+          </video>
+          <iframe id="dnsVideoIframe" class="video-iframe" style="display: none;" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+      <div class="section-title" bis_skin_checked="1">
+        <i class="fa-solid fa-list-check text-amber-400"></i>
+        <span>Hướng dẫn cài đặt trên iPhone</span>
+      </div>
+      
+      <div class="steps" bis_skin_checked="1">
+        <div class="step-item" bis_skin_checked="1">
+          <div class="step-num" bis_skin_checked="1">1</div>
+          <div class="step-text" bis_skin_checked="1">Nhấn nút <b>Tải Cấu Hình</b> ở trên và bấm chọn <b>Cho phép (Allow)</b> khi hệ thống hỏi.</div>
+        </div>
+        <div class="step-item" bis_skin_checked="1">
+          <div class="step-num" bis_skin_checked="1">2</div>
+          <div class="step-text" bis_skin_checked="1">Mở <b>Cài đặt (Settings)</b> ➜ chọn <b>Đã tải về hồ sơ</b> (hoặc Cài đặt chung ➜ Quản lý VPN &amp; Thiết bị) ➜ nhấn <b>Cài đặt (Install)</b>.</div>
+        </div>
+        <div class="step-item" bis_skin_checked="1">
+          <div class="step-num" bis_skin_checked="1">3</div>
+          <div class="step-text" bis_skin_checked="1"><b>Bật tin cậy chứng chỉ:</b> Vào <b>Cài đặt</b> ➜ <b>Cài đặt chung</b> ➜ <b>Giới thiệu</b> ➜ kéo xuống cuối chọn <b>Cài đặt tin cậy chứng chỉ</b> ➜ Gạt <b>BẬT</b> cho <b>LocketGold CA</b>.</div>
+        </div>
+        <div class="step-item" bis_skin_checked="1">
+          <div class="step-num" bis_skin_checked="1">4</div>
+          <div class="step-text" bis_skin_checked="1"><b>Hoàn tất:</b> Đóng hoàn toàn app Locket (vuốt tắt đa nhiệm) rồi mở lại để kích hoạt Locket Gold!</div>
+        </div>
+      </div>
+
+      <div class="warning-box" bis_skin_checked="1">
+        <div class="warning-title" bis_skin_checked="1">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span>Lưu ý quan trọng:</span>
+        </div>
+        <ul class="warning-list">
+          <li>Mở trang web này bằng <b>trình duyệt Safari</b> (không mở từ Zalo, Facebook, TikTok hoặc Chrome).</li>
+          <li>Bắt buộc phải làm đầy đủ <b>Bước 3 (Bật tin cậy chứng chỉ)</b> thì thiết bị mới nhận Locket Gold.</li>
+        </ul>
+      </div>
+
+      <div class="footer" bis_skin_checked="1">
+        <div bis_skin_checked="1">Hệ thống kích hoạt Locket Gold tự động • taikhoanxin ONLINE STORE SHOP</div>
+        <button class="copy-btn" onclick="copyCurrentLink()">
+          <i class="fa-regular fa-copy"></i>
+          <span id="copyTxt">Sao chép link gửi cho khách</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Kiểm tra nếu đang mở trong in-app browser (Zalo, FB, Telegram)
+    const ua = navigator.userAgent || '';
+    const isSafari = /^((?!chrome|android).)*safari/i.test(ua);
+    const isInApp = /FBAN|FBAV|Instagram|Line|Zalo|Telegram|Twitter|MicroMessenger/i.test(ua);
+    if (isInApp || !isSafari) {
+      const notice = document.getElementById('safariNotice');
+      if (notice) notice.style.display = 'block';
+    }
+
+    function copyCurrentLink() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        const txt = document.getElementById('copyTxt');
+        if (txt) {
+          txt.innerText = 'Đã sao chép link!';
+          setTimeout(() => { txt.innerText = 'Sao chép link gửi cho khách'; }, 2000);
+        }
+      });
+    }
+
+    // Tự động tải cấu hình DNS & Video từ server
+    async function loadDnsConfig() {
+      try {
+        const res = await fetch('/api/dns-config');
+        const data = await res.json();
+        if (data.status === 'success') {
+          // Cập nhật link tải nút Download
+          const dlBtn = document.getElementById('downloadBtn');
+          if (dlBtn && data.dnsDownloadUrl) {
+            dlBtn.href = data.dnsDownloadUrl;
+          }
+
+          // Cập nhật video nếu có
+          if (data.dnsVideoUrl && data.dnsVideoUrl.trim()) {
+            const vContainer = document.getElementById('videoContainer');
+            const vPlayer = document.getElementById('dnsVideoPlayer');
+            const vSource = document.getElementById('videoSource');
+            const vIframe = document.getElementById('dnsVideoIframe');
+            const vTitle = document.getElementById('videoTitleDisplay');
+
+            if (data.dnsVideoTitle && vTitle) {
+              vTitle.innerText = data.dnsVideoTitle;
+            }
+
+            const url = data.dnsVideoUrl.trim();
+            // Nếu là link YouTube
+            if (url.includes('youtube.com') || url.includes('youtu.be')) {
+              let embedUrl = url;
+              const ytMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
+              if (ytMatch && ytMatch[1]) {
+                embedUrl = `https://www.youtube.com/embed/${ytMatch[1]}`;
+              }
+              vIframe.src = embedUrl;
+              vIframe.style.display = 'block';
+              vPlayer.style.display = 'none';
+            } else {
+              // Video file trực tiếp (mp4, webm, mov...)
+              vSource.src = url;
+              vPlayer.load();
+              vPlayer.style.display = 'block';
+              vIframe.style.display = 'none';
+            }
+            vContainer.style.display = 'block';
+          }
+        }
+      } catch (err) {
+        console.warn('Lỗi tải cấu hình DNS:', err);
+      }
+    }
+
+    loadDnsConfig();
+  </script>
+
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span></body></html>
